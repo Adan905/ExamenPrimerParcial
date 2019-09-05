@@ -45,11 +45,15 @@ namespace ExamenPrimerParcial
         {
             get
             {
-                return Duracion
+                return Duracion;
             }
             set
             {
                 if (value > 0 )
+                    {
+                    Duracion = value;
+                    }
+                else
                 {
                   
                     throw new Exception("La película no puede durar 0 minutos");
@@ -61,7 +65,7 @@ namespace ExamenPrimerParcial
         {
             get
             {
-                return Rating_de_IMDB
+                return Rating_de_IMDB;
             }
             set
             {
